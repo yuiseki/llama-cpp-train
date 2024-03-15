@@ -2,6 +2,7 @@ TARGETS = \
 	data/shakespeare/shakespeare.txt \
 	data/www.aozora.gr.jp/789_utf8_wagahaiwa_nekodearu.txt \
 	chk/shakespeare/ggml-shakespeare-256x16-f32-LATEST.gguf \
+	chk/shakespeare_i512/ggml-shakespeare-256x16-f32-LATEST.gguf \
 	chk/nekodearu/ggml-nekodearu-256x16-f32-LATEST.gguf
 
 all: $(TARGETS)
