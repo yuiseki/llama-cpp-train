@@ -1,4 +1,6 @@
 chk/
 !chk/.gitkeep
+tmp/
+!tmp/.gitkeep
 data/shakespeare/*.txt
 data/www.aozora.gr.jp/*.txt
