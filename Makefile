@@ -19,6 +19,10 @@ chk/shakespeare/ggml-shakespeare-256x16-f32-LATEST.gguf: data/shakespeare/shakes
 	mkdir -p chk/shakespeare
 	./train_default.sh
 
+chk/shakespeare_i512/ggml-shakespeare-256x16-f32-LATEST.gguf: data/shakespeare/shakespeare.txt
+	mkdir -p chk/shakespeare
+	./train_iter_512.sh
+
 tmp/www.aozora.gr.jp/789_ruby_utf8_wagahaiwa_nekodearu.txt:
 	mkdir -p tmp/www.aozora.gr.jp
 	wget \
