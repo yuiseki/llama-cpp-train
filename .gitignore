@@ -1,0 +1,4 @@
+chk/
+!chk/.gitkeep
+data/shakespeare/*.txt
+data/www.aozora.gr.jp/*.txt
