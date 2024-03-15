@@ -13,6 +13,7 @@ data/shakespeare/shakespeare.txt:
 		https://raw.githubusercontent.com/brunoklein99/deep-learning-notes/master/shakespeare.txt
 
 chk/shakespeare/ggml-shakespeare-256x16-f32-LATEST.gguf: data/shakespeare/shakespeare.txt
+	mkdir -p chk/shakespeare
 	./train_default.sh
 
 tmp/www.aozora.gr.jp/789_ruby_utf8_wagahaiwa_nekodearu.txt:
@@ -26,4 +27,5 @@ data/www.aozora.gr.jp/789_utf8_wagahaiwa_nekodearu.txt: tmp/www.aozora.gr.jp/789
 	cat tmp/www.aozora.gr.jp/789_ruby_utf8_wagahaiwa_nekodearu.txt | ./clean_aozora_ruby.sh > data/www.aozora.gr.jp/789_utf8_wagahaiwa_nekodearu.txt
 
 chk/nekodearu/ggml-nekodearu-256x16-f32-LATEST.gguf: data/www.aozora.gr.jp/789_utf8_wagahaiwa_nekodearu.txt
+	mkdir -p chk/nekodearu
 	./train_nekodearu.sh
