@@ -12,7 +12,7 @@ mkdir -p chk/shakespeare/
   --save-every 16 \
   --seed 1 \
   --ctx 64 \
-  --threads 16 \
+  --threads 8 \
   --batch 16 \
   --no-checkpointing \
   --adam-iter 512
