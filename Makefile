@@ -26,6 +26,10 @@ chk/shakespeare_i512/ggml-shakespeare-256x16-f32-LATEST.gguf: data/shakespeare/s
 	mkdir -p chk/shakespeare_i512
 	./train_i512.sh
 
+chk/shakespeare_e512/ggml-shakespeare-256x16-f32-LATEST.gguf: data/shakespeare/shakespeare.txt
+	mkdir -p chk/shakespeare_e512
+	./train_e512.sh
+
 chk/shakespeare_ei512/ggml-shakespeare-256x16-f32-LATEST.gguf: data/shakespeare/shakespeare.txt
 	mkdir -p chk/shakespeare_ei512
 	./train_ei512.sh
