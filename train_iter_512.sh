@@ -1,14 +1,14 @@
-mkdir -p chk/shakespeare/
+mkdir -p chk/shakespeare_512/
 
 ~/llama.cpp/train-text-from-scratch \
   --vocab-model ~/llama.cpp/models/ggml-vocab-llama.gguf \
-  --model-out chk/shakespeare/ggml-shakespeare-256x16-f32-ITERATION.gguf \
+  --model-out chk/shakespeare_512/ggml-shakespeare-256x16-f32-ITERATION.gguf \
   --embd 256 \
   --head 8 \
   --layer 16 \
-  --train-data "data/shakespeare/shakespeare.txt" \
-  --checkpoint-in  chk/shakespeare/chk-shakespeare-256x16-LATEST.gguf \
-  --checkpoint-out chk/shakespeare/chk-shakespeare-256x16-ITERATION.gguf \
+  --train-data "data/shakespeare_512/shakespeare.txt" \
+  --checkpoint-in  chk/shakespeare_512/chk-shakespeare-256x16-LATEST.gguf \
+  --checkpoint-out chk/shakespeare_512/chk-shakespeare-256x16-ITERATION.gguf \
   --save-every 16 \
   --seed 1 \
   --ctx 64 \
