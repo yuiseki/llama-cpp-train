@@ -7,7 +7,7 @@ TARGETS = \
 all: $(TARGETS)
 
 clean:
-	rm -rf chk
+	rm -rf chk/*
 
 data/shakespeare/shakespeare.txt:
 	mkdir -p data/shakespeare
