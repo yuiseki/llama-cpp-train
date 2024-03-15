@@ -1,7 +1,7 @@
 mkdir -p chk/shakespeare/
 
 ~/llama.cpp/train-text-from-scratch \
-  --vocab-model ../models/ggml-vocab-llama.gguf \
+  --vocab-model ~/llama.cpp/models/ggml-vocab-llama.gguf \
   --model-out chk/shakespeare/ggml-shakespeare-256x16-f32-ITERATION.gguf \
   --embd 256 \
   --head 8 \

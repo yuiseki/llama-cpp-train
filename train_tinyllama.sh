@@ -1,7 +1,7 @@
 mkdir -p chk/tinyllama/
 
 ~/llama.cpp/train-text-from-scratch \
-  --vocab-model ../models/ggml-vocab-llama.gguf \
+  --vocab-model ~/llama.cpp/models/ggml-vocab-llama.gguf \
   --model-out chk/tinyllama/ggml-shakespeare-tinyllama-f32-ITERATION.gguf \
   --embd 2048 \
   --head 32 \
